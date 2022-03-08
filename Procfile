@@ -1,2 +1,2 @@
-web: bundle exec rails server -p $PORT
+web: gunicorn app:manage
 heroku ps:scale web=1 
